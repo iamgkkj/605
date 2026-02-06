@@ -1,0 +1,27 @@
+first sync the real time IST and show the content accordingly
+
+Feb 7 (Saturday): Rose Day – on rose day under "HI @username" the text will appear "Do you want Roses?" then there will be a yes 
+and no button but yes can't be pressed and it will move randomly upon hovering, pressing no, will prompt the propose gif 
+pressing it the rose loading gif from src/loading/*rose.gif will
+appear and then the rose gif from src/*rose.gif will be shown and then a text under will be "come tommorrow for 
+propose day" 
+
+Feb 8 (Sunday): Propose Day – special message will be "will you be my valentine?" then there will be a yes 
+and no button but no can't be pressed and it will move randomly upon hovering, pressing yes, will prompt the propose gif pressing it the rose loading gif from src/loading will
+appear and then the rose gif from src/ will be shown and then a text under will be "come tommorrow for 
+propose day" 
+Feb 9 (Monday): Chocolate Day – message "Do you want a chocolate" then there will be a yes 
+and no button but yes can't be pressed and it will move randomly upon hovering, pressing no, will prompt the chocolate gif      
+Feb 10 (Tuesday): Teddy Day – message "do you want a teddy?" then there will be a yes 
+and no button but yes can't be pressed and it will move randomly upon hovering, pressing no, will prompt the teddy gifs
+Feb 11 (Wednesday): Promise Day – message "I want to promise to you @a cute message for love" with the promise gif
+Feb 12 (Thursday): Hug Day – message "do you want a hug?" then there will be a yes 
+and no button but yes can't be pressed and it will move randomly upon hovering, pressing no, will prompt the hug gifs
+Feb 13 (Friday): Kiss Day – message "do you want a kiss?" then there will be a yes 
+and no button but yes can't be pressed and it will move randomly upon hovering, pressing no, will prompt the kiss gifs
+Feb 14 (Saturday): Valentine's Day – message "Do you want to be my valentine?" there will be a yes 
+and no button but no can't be pressed and it will move randomly upon hovering, pressing yes, will prompt the valentine gifs
+
+similarly do these for all where gif names in /src and /src/loading are corresponding to their days
+in case of more than one gifs with a keyword, choose any random. at the end of each day content promopt the message 
+ "come tommorrow for @next day"

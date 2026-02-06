@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>605 - Valentine's Week</title>
+    <!-- Google Fonts for Cute/Modern Look -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Pacifico&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="hidden">
+            <img id="loading-gif" src="" alt="Loading..." />
+        </div>
+
+        <!-- Login Screen -->
+        <div id="login-screen">
+            <div class="login-container">
+                <h1 class="title-605">605</h1>
+                <div class="input-group">
+                    <input type="text" id="username-input" placeholder="Your Name" autocomplete="off" />
+                </div>
+                <div class="password-group">
+                    <label>Password</label>
+                    <div class="pass-boxes">
+                        <input type="text" maxlength="1" class="pass-box" data-index="0" inputmode="numeric" />
+                        <input type="text" maxlength="1" class="pass-box" data-index="1" inputmode="numeric" />
+                        <input type="text" maxlength="1" class="pass-box" data-index="2" inputmode="numeric" />
+                        <input type="text" maxlength="1" class="pass-box" data-index="3" inputmode="numeric" />
+                    </div>
+                </div>
+                <button id="login-btn">Enter</button>
+            </div>
+        </div>
+
+        <!-- Captcha Modal -->
+        <div id="captcha-modal" class="hidden">
+            <div class="captcha-content">
+                <h2>Security Check</h2>
+                <p>Select all images with <strong>Roses</strong></p>
+                <div class="captcha-grid" id="captcha-grid">
+                    <!-- Images injected by JS -->
+                </div>
+                <button id="captcha-verify-btn">Verify</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Screen -->
+        <div id="dashboard-screen" class="hidden">
+            <!-- Background is handled via CSS on this container or body -->
+            <div class="dashboard-content">
+                <h2 id="greeting">Hi</h2>
+
+                <div id="day-content" class="glass-card">
+                    <h3 id="day-title">Loading...</h3>
+                    <p id="day-message">Please wait...</p>
+                    <div id="day-image-container">
+                        <!-- Dynamic Image -->
+                    </div>
+                </div>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Created with <span class="heart">♥</span> by Gopal
+                </div>
+                <div class="footer-right">
+                    <button id="archive-btn" class="archive-icon" title="Archive">
+                        💌
+                    </button>
+                    <a href="https://www.canva.com/design/DAHAkzak9MY/RPlBENh73SO6c_kfAUW6jw/edit?utm_content=DAHAkzak9MY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank" class="gift-icon">
+                        🎁
+                    </a>
+                    <button id="logout-btn" class="logout-icon" title="Logout">
+                        👋
+                    </button>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Archive Modal -->
+        <div id="archive-modal" class="hidden">
+            <div class="archive-content glass-card">
+                <h2>Memories 💌</h2>
+                <div id="archive-list" class="archive-list">
+                    <!-- List items injected by JS -->
+                </div>
+                <button id="close-archive-btn">Close</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
